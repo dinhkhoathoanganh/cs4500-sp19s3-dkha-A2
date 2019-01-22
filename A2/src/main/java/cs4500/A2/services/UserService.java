@@ -17,4 +17,10 @@ public class UserService {
 		users.add(new User(2, "bob", "bob", "Bob", "Marley"));
 	}
 
+	@GetMapping("/api/user")
+	public List<User> findAllUsers() {
+		return users;
+	}
+	
+
 }
